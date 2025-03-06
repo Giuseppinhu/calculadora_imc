@@ -34,6 +34,7 @@
     border: none;
     border-radius: 0.5rem;
     padding: 10px 25px;
+    cursor: pointer;
 }
 
 .resultDiv {

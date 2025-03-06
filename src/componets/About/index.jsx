@@ -1,6 +1,6 @@
 import styles from './About.module.css'
 
-const About = () => {
+const About = ({imc, category}) => {
     return (
         <div className={styles.about}>
             <div className={styles.text}>
@@ -10,18 +10,29 @@ const About = () => {
             <div className={styles.text}>
                 <h2 className={styles.textTitle}>Interpretação do IMC:</h2>
                 <ul className={styles.table}>
-                    <li><b>Abaixo do peso:</b> IMC abaixo de 18,5.</li>
-                    <li><b>Peso normal:</b> IMC entre 18,5 e 24,9.</li>
-                    <li><b>Sobrepeso:</b> IMC entre 25 e 29,9.</li>
-                    <li><b>Obesidade I:</b> IMC entre 30 e 34,9</li>
-                    <li><b>Obesidade II:</b> IMC entre 35 e 39,9</li>
-                    <li><b>Obesidade III:</b> IMC acima de 40</li>
+                <li className={category === "abaixoPeso" ? styles.highlightabaP : ""}>
+                    <b>Abaixo do peso:</b> IMC abaixo de 18,5.
+                </li>
+                <li className={category === "pesoNormal" ? styles.highlightPesN : ""}>
+                    <b>Peso normal:</b> IMC entre 18,5 e 24,9.
+                </li>
+                <li className={category === "sobrepeso" ? styles.highlightSobP : ""}>
+                    <b>Sobrepeso:</b> IMC entre 25 e 29,9.
+                </li>
+                <li className={category === "obesidade1" ? styles.highlightObs1 : ""}>
+                    <b>Obesidade I:</b> IMC entre 30 e 34,9
+                </li>
+                <li className={category === "obesidade2" ? styles.highlightObs2 : ""}>
+                    <b>Obesidade II:</b> IMC entre 35 e 39,9
+                </li>
+                <li className={category === "obesidade3" ? styles.highlightObs3 : ""}>
+                    <b>Obesidade III:</b> IMC acima de 40
+                </li>
                 </ul>
                 <p>Embora o IMC seja uma ferramenta útil para avaliar a saúde geral, ele não leva em conta a composição corporal, como a quantidade de massa muscular ou gordura, e pode não ser completamente preciso para todas as pessoas, especialmente atletas ou pessoas com diferentes tipos de corpo.</p>
             </div>
         </div>
     )
-
 }
 
 export default About

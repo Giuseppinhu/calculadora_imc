@@ -7,10 +7,10 @@ const Header = () => {
           <nav>
             <ul className={styles.socialLinks}>
                 <li className={styles.link}>
-                    <a href="#" className={styles.linkItem}>LinkInd</a>
+                    <a href="#" className={styles.linkItem}><i class="fi fi-brands-linkedin"></i></a>
                 </li>
                 <li className={styles.link}>
-                    <a href="#" className={styles.linkItem}>Github</a>
+                    <a href="#" className={styles.linkItem}><i class="fi fi-brands-github"></i></a>
                 </li>
             </ul>
           </nav>

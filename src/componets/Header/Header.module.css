@@ -8,6 +8,7 @@ nav {
     display: flex;
 }
 
+
 .title {
     /* margin-bottom: 40px; */
     color: #4b6584;
@@ -24,4 +25,9 @@ nav {
 
 .linkItem {
     text-decoration: none;
+    i {
+        color: #4b6584;
+       font-size: 30px;
+       line-height: 50px;
+    }
 }
