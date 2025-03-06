@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+}
+
+.title {
+    /* margin-bottom: 40px; */
+    color: #4b6584;
+}
+
+.socialLinks {
+    display: flex;
+}
+
+.link {
+    list-style: none;
+    margin: 0 8px; 
+}
+
+.linkItem {
+    text-decoration: none;
+}
